@@ -14,8 +14,14 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
 </script>
 <script>
-    document.getElementById("#year").textContent = new Date().getFullYear();
+    // document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+    <script>
+        const totalBill = 12000;
+        const numberOfFriends = 4
+        const amountPerPerson = totalBill / numberOfFriends;
+        console.log("Each person pays " + "#" + amountPerPerson);
+    </script>
 
 <!-- BOOTSTRAP DEGREE SYSTEM -->
 <!-- <div class="row">
@@ -165,20 +171,26 @@
       </div>
       <div class="modal-body">
         <form>
-          <label>Full Name</label>
-          <input type="text" class="form-control" />
-          <label>Email Address</label>
-          <input type="email" class="form-control" />
-          <label>Destination</label>
-          <input type="text" class="form-control" />
-          <label>Departure Date</label>
-          <input type="date" class="form-control" />
-          <label>Return Date</label>
-          <input type="date" class="form-control" />
-          <label>Number of Travelers</label>
-          <input type="number" class="form-control" />
-          <label>Special Requests</label>
-          <textarea class="form-control" rows="3"></textarea>
+          <label for="fullName">Full Name</label>
+          <input type="text" class="form-control" id="fullName" />
+
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" />
+
+          <label for="destination">Destination</label>
+          <input type="text" class="form-control" id="destination" />
+
+          <label for="departureDate">Departure Date</label>
+          <input type="date" class="form-control" id="departureDate" />
+
+          <label for="returnDate">Return Date</label>
+          <input type="date" class="form-control" id="returnDate" />
+
+          <label for="numberOfTravelers">Number of Travelers</label>
+          <input type="number" class="form-control" id="numberOfTravelers" />
+
+          <label for="specialRequests">Special Requests</label>
+          <textarea class="form-control" rows="3" id="specialRequests"></textarea>
         </form>
       </div>
       <div class="modal-footer">
